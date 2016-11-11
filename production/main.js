@@ -41,7 +41,7 @@ function onClick(element) {
   } else if (element.alt == 'Little Beethoven') {
     captionText = "A work in progress, this is a simple digital piano...";
     githubLink = "https://github.com/nasser85/musicMaker";
-    liveSiteLink = "";
+    liveSiteLink = "https://nasser85.github.io/little-Beethoven-demo/";
   } else if (element.alt == 'Karaoke Songbird') {
     captionText = "A lightweight application for fetching lyrics to just about any song...";
     githubLink = "https://github.com/nasser85/songbird";
