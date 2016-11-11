@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>Nasser Abouelazm - Web Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3schools.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.min.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#">HOME</a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-hover-red"><i class="fa fa-search"></i></a>
+    </li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Nasser<span class="w3-show-small w3-hide-large w3-hide-medium"> A.</span><span class="w3-hide-small"> Abouelazm</span></span>
+  </div>
+  <div id="second" class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">Web </span>Developer</span>
+  </div>
+
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I Love to Solve Problems</em></p>
+  <p>I started off life as a math nerd, winning trophies in countless middle and high school competitions. My passions in addition to math became varied as I grew to love literature, film, and music. After getting my Bachelors from the University of Florida, where I graduated Dean's List, I was a middle school teacher for over three years in New Orleans and Saudi Arabia. I created dynamic lesson plans, often incorporating engaging projects for students. While teaching I began coding and discovered a new talent. I attended Fullstack Academy in the summer to develop my SEAN stack (Sequelize, Express, Angular, Node) skills. I am currently on the search for the perfect opportunity to show case my current skills and to add new ones to my tool belt.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b>Nasser Abouelazm</b></p><br>
+      <img src="me.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="400" height="233">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p class="w3-center"><em>Check out my resume!</em></p>
+      <a href="Nasser_Resume.pdf" download>
+        <img src="resume.png"  download class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="400" height="520">
+      </a>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">SKILLS</p>
+  <p class="w3-wide">JavaScript</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:95%"></div>
+  </div>
+  <p class="w3-wide">Angular</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:90%"></div>
+  </div>
+  <p class="w3-wide">HTML/CSS</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:95%"></div>
+  </div>
+  <p class="w3-wide">JQuery</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:90%"></div>
+  </div>
+  <p class="w3-wide">Node</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:80%"></div>
+  </div>
+  <p class="w3-wide">PostgreSQL</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:75%"></div>
+  </div>
+  <p class="w3-wide">Express</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:80%"></div>
+  </div>
+  <p class="w3-wide">Git</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:85%"></div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">PROJECTS</h3>
+  <p class="w3-center"><em>Here are some of my latest projects.<br> Click on the images to see more.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="story.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt='Living Story Book'>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="regex.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Regex Race">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="music.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Little Beethoven">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="songbird.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Karaoke Songbird">
+    </div>
+    <div class="w3-col m3">
+      <img src="game.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Untitled">
+    </div>
+  </div>
+
+  
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"  onclick="document.getElementById('modal01').style.display='none'">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <h2 id="project-title" class="w3-center"></h2>
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+    <h4><a target="_blank" id="github">View Github Repo</a></h4>
+    <h4><a target="_blanK" id="live-site">View Live Demo</a></h4>
+
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">REACH OUT</h3>
+  <p class="w3-center"><em>Don't hesitate to drop me a line!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> New York City, US<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Skype: nasser.abouelazm<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: nasser.abouelazm@gmail.com<br>
+      </div>
+      <p>Shoot me an email:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input id="name" class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input id="email" class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input id="message" class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <button class="w3-btn w3-section w3-right" onclick="submit()">SEND MESSAGE</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-16 w3-hover-black">
+  <div class="w3-xlarge w3-padding-32">
+     <a href="https://github.com/nasser85" target="_blank" class="w3-hover-text-light-blue"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/nasser-abouelazm-b98894126" target="_blank" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  </div>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARnQhZJ-okuWrDSe17M1_96Sdh9cx-j_0"></script>
+
+<!-- Add Email Client Side Email Capabities -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
