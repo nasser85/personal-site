@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Nasser Abouelazm - Web Developer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3schools.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -220,14 +220,14 @@ body, html {
       <p>Shoot me an email:</p>
       <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+          <input id="name" class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
         </div>
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+          <input id="email" class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
         </div>
       </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-      <button class="w3-btn w3-section w3-right">SEND MESSAGE</button>
+      <input id="message" class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <button class="w3-btn w3-section w3-right" onclick="submit()">SEND MESSAGE</button>
     </div>
   </div>
 </div>
@@ -246,25 +246,34 @@ body, html {
  
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARnQhZJ-okuWrDSe17M1_96Sdh9cx-j_0"></script>
+
+<!-- Add Email Client Side Email Capabities -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_nyJW29D1RhTsLGyZCqxnm");
+   })();
+</script>
+
 <script>
 var myCenter = new google.maps.LatLng(40.741895, -73.989308);
 
 function initialize() {
-var mapProp = {
-  center: myCenter,
-  zoom: 12,
-  scrollwheel: false,
-  draggable: false,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
+  var mapProp = {
+    center: myCenter,
+    zoom: 12,
+    scrollwheel: false,
+    draggable: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var marker = new google.maps.Marker({
-  position: myCenter,
-});
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
 
-marker.setMap(map);
+  marker.setMap(map);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
@@ -313,6 +322,19 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
+
+function submit() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+  console.log(name, email, message);
+  emailjs.send("default_service","my_template",{from_name: name, from_email: email, message_html: message});
+  document.getElementById('name').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('message').value = "";
+  alert('Your message has been sent.  Thanks for reaching out!');
+}
+
 </script>
 
 </body>
