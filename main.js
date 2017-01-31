@@ -50,6 +50,10 @@ function onClick(element) {
     captionText = "A concept for a game similar to Agar.io...";
     githubLink = "https://github.com/nasser85/CircleGame";
     liveSiteLink = "https://circlesandskulls.herokuapp.com";
+  } else if (element.alt == 'Teacher Creature') {
+    captionText = "A K-12 version of CourseKey, where teachers can manage the classroom from any device...";
+    githubLink = "https://github.com/nasser85/teacher-creature";
+    liveSiteLink = "https://github.com/nasser85/teacher-creature";
   }
   document.getElementById("caption").innerHTML = captionText;
   document.getElementById("project-title").innerHTML = element.alt;
